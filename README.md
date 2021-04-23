@@ -21,7 +21,6 @@ Besides the instructions provided here, your instructor will review these proced
 
 ## Getting Started without Databricks Notebooks
 1. Under **Releases** in the pane to the right, click on the **Latest** link.  
-https://github.com/databricks-academy/just-enough-python-for-spark/releases/latest
 2. Look for the link to **Just-Enough-Python-For-Spark.dbc**.
 3. Right click the link and copy the link location.
 4. Back in the Databricks workspace, click on the **Home** icon in the navigational pane to the left
