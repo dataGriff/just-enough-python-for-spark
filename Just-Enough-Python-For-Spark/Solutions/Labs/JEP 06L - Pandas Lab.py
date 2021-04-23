@@ -72,7 +72,6 @@ df["two"][1]
 df["row sum"] = df["one"] + df["two"] + df["three"]
 df
 
-
 # COMMAND ----------
 
 # MAGIC %md-sandbox

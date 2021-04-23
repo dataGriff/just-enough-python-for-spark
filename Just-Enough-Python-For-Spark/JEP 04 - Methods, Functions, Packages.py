@@ -18,7 +18,6 @@
 # MAGIC * Employ the **`help()`** function to learn about modules, functions, classes, and keywords
 # MAGIC * Identify differences between functions and methods
 # MAGIC * Import libraries
-# MAGIC    
 
 # COMMAND ----------
 
@@ -42,7 +41,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC The code below will return 1 because it is odd. 
+# MAGIC The code below will return 1 because it is odd.
 
 # COMMAND ----------
 
@@ -494,7 +493,6 @@ def my_func(**kwargs):
 my_func(first_name="Jeff", last_name="Lebowski", drink="White Russian")
 
 my_func(movie_title="The Big Lebowski", release_year=1998)
-
 
 # COMMAND ----------
 

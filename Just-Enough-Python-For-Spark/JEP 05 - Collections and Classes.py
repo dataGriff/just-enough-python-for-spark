@@ -618,7 +618,6 @@ print(f"person3's current name: {person3.full_name()}")
 person3.first_name = "Wendy"  # You can change the value of object properties
 print(f"person3's updated name: {person3.full_name()}")
 
-
 # COMMAND ----------
 
 # MAGIC %md-sandbox

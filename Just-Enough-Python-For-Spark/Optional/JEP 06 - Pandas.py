@@ -18,7 +18,6 @@
 # MAGIC * Perform operations on pandas objects
 # MAGIC 
 # MAGIC First, let us import pandas with the alias `pd` so we can refer to the library without having to type Pandas out each time. Pandas is pre-installed on Databricks.
-# MAGIC    
 
 # COMMAND ----------
 
@@ -199,7 +198,6 @@ df["Integers"] * df["Integers"]
 
 df["New Column"] = df["Integers"] * 100
 df
-
 
 # COMMAND ----------
 

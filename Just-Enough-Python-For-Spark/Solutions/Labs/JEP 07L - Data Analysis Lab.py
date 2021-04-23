@@ -75,7 +75,7 @@ df[df.isna().any(axis=1)]
 # MAGIC %md
 # MAGIC We're going to assume if a listing didn't input a number for `beds`, `bedrooms`, or `bathrooms` then the number should have been a 0.
 # MAGIC 
-# MAGIC Let's go ahead and fill the missing values for `beds`, `bedrooms`, or `bathrooms` with `0`. 
+# MAGIC Let's go ahead and fill the missing values for `beds`, `bedrooms`, or `bathrooms` with `0`.
 
 # COMMAND ----------
 
@@ -98,7 +98,7 @@ df["bathrooms"].mean()
 # MAGIC %md
 # MAGIC ### Filter
 # MAGIC 
-# MAGIC Suppose we are only going to be near `Financial District` so we only want to view listings in that neighbourhood. 
+# MAGIC Suppose we are only going to be near `Financial District` so we only want to view listings in that neighbourhood.
 
 # COMMAND ----------
 
@@ -113,13 +113,12 @@ financial_district_df.head()
 # MAGIC 
 # MAGIC We want to see what the most common types of property listings around `Financial District` are! 
 # MAGIC 
-# MAGIC [Plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html) the count of the various `property_type`. 
+# MAGIC [Plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html) the count of the various `property_type`.
 
 # COMMAND ----------
 
 # ANSWER
 financial_district_df.groupby(["property_type"]).count().sort_values("beds", ascending=False).plot(kind="bar", y="beds")
-
 
 # COMMAND ----------
 

@@ -16,7 +16,6 @@
 # MAGIC * Declare and assign variables
 # MAGIC * Employ simple, built-in functions such as **`print()`** and **`type()`**
 # MAGIC * Develop and use **`assert`** statements
-# MAGIC  
 
 # COMMAND ----------
 
@@ -141,37 +140,37 @@ with multiple lines"""
 # COMMAND ----------
 
 # The first of two possible boolean values
-type(True) 
+type(True)
 
 # COMMAND ----------
 
 # The second of two possible boolean values
-type(False) 
+type(False)
 
 # COMMAND ----------
 
 # A whole number, or integer
-type(132) 
+type(132)
 
 # COMMAND ----------
 
 # A floating point number
-type(34.62) 
+type(34.62)
 
 # COMMAND ----------
 
 # A single-quote string
-type('A single quote string') 
+type('A single quote string')
 
 # COMMAND ----------
 
 # A double-quote string
-type("A double quote string") 
+type("A double quote string")
 
 # COMMAND ----------
 
 # A tripple quote string
-type("""A tripple quote string""") 
+type("""A tripple quote string""")
 
 # COMMAND ----------
 
@@ -255,7 +254,7 @@ print(_BEST_FOOD)
 # COMMAND ----------
 
 # Just for refference, what was the "best" food?
-print(best_food) 
+print(best_food)
 
 # COMMAND ----------
 

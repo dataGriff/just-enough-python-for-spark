@@ -28,6 +28,7 @@
 # MAGIC * Inside the loop, you will need a combination of **`if`**, **`elif`** and **`else`** statements.
 # MAGIC * The modulo (**`%`**) operator will give you the cleanest method for testing for divisability by 3 and 5.
 # MAGIC * Start with a short list, say 1 to 15, during your initial development and then scale out to 100 when you think you are ready.
+# MAGIC * Don't worry about how pretty your code is - there are many different ways of completing this challenge - all of them are correct, if the output is correct.
 
 # COMMAND ----------
 

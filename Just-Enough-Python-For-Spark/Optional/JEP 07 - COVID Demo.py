@@ -456,7 +456,6 @@ def plotMyCountry(Country_Region, Province_State, Admin2):
   
 plotMyCountry("US", "New York", "New York City")
 
-
 # COMMAND ----------
 
 # MAGIC %md-sandbox

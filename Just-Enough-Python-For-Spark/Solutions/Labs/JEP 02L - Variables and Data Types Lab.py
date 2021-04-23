@@ -25,7 +25,7 @@
 # COMMAND ----------
 
 # ANSWER
-conversion_rate = 1.18 # Create the variable conversion_rate and assign it the value of 1.18
+conversion_rate = 1.18  # Create the variable conversion_rate and assign it the value of 1.18
 
 # COMMAND ----------
 
@@ -35,7 +35,8 @@ conversion_rate = 1.18 # Create the variable conversion_rate and assign it the v
 # COMMAND ----------
 
 # ANSWER
-assert type(conversion_rate) == float, f"Expected conversion_rate to be of type float, found {type(conversion_rate)}" 
+# Assert that your variable is of the correct type
+assert type(conversion_rate) == float, f"Expected conversion_rate to be of type float, found {type(conversion_rate)}"
 
 # COMMAND ----------
 
@@ -53,7 +54,7 @@ euro_amount = 567                                # Create the variable euro_amou
 usd_amount = conversion_rate * euro_amount       # Assign the result of the computation to usd_amount
 
 # Test your solution
-assert usd_amount == 669.06, "Incorrect amount." 
+assert usd_amount == 669.06, "Incorrect amount."
 
 # COMMAND ----------
 

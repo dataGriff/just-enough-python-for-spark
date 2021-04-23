@@ -25,7 +25,7 @@
 # COMMAND ----------
 
 # TODO
-FILL_IN = FILL_IN # Create the variable conversion_rate and assign it the value of 1.18
+FILL_IN = FILL_IN  # Create the variable conversion_rate and assign it the value of 1.18
 
 # COMMAND ----------
 
@@ -35,7 +35,8 @@ FILL_IN = FILL_IN # Create the variable conversion_rate and assign it the value 
 # COMMAND ----------
 
 # TODO
-assert FILL_IN == FILL_IN, FILL_IN # Assert that your variable is of the correct type
+# Assert that your variable is of the correct type
+assert FILL_IN == FILL_IN, FILL_IN
 
 # COMMAND ----------
 
@@ -49,11 +50,11 @@ assert FILL_IN == FILL_IN, FILL_IN # Assert that your variable is of the correct
 # COMMAND ----------
 
 # TODO
-FILL_IN = FILL_IN # Create the variable euro_amount and assign it the value of 567
-FILL_IN = FILL_IN # Assign the result of the computation to usd_amount
+FILL_IN = FILL_IN  # Create the variable euro_amount and assign it the value of 567
+FILL_IN = FILL_IN  # Assign the result of the computation to usd_amount
 
 # Test your solution
-assert usd_amount == 669.06, "Incorrect amount." 
+assert usd_amount == 669.06, "Incorrect amount."
 
 # COMMAND ----------
 
