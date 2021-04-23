@@ -5,16 +5,16 @@ There are two means by which to get started (with and w/o Databricks Projects).
 
 Besides the instructions provided here, your instructor will review these procedures at the start of the course.
 
-## Getting Started with Databricks Projects
-1. Note: As of Sept, 18, 2020, Databricks Projects is only availbe as a private preview and may not be availble to all customers
+## Getting Started with Databricks Repos
+1. Note: As of April, 23, 2021, Databricks Repos is only availbe as a private preview and may not be availble to all customers
 2. Click on the **Projects** icon in the navigational pane to the left
 3. By default, you should be in the folder **/Projects/your-email-address** as in **/Projects/student@azuredatabrickstraining.onmicrosoft.com**
 4. Click the **Create Projects** button above the two swim lanes
 5. In the **Create Projects** dialog box
    1. Select **Clone from Git repo**
-   2. Enter the URL for the Git repo, in this case, https://github.com/databricks-curriculum/INT-JEPS-V2-IL.git
+   2. Enter the URL for the Git repo, in this case, https://github.com/databricks-academy/just-enough-python-for-spark.git
    3. The Git provider **GitHub** should be selected for you automatically
-   4. The **Project name** should default to **INT-JEPS-V2-IL** - feel free to rename this if you like
+   4. The **Project name** should default to **just-enough-python-for-spark** - feel free to rename this if you like
    5. Click the **Create** button
 6. Once the import is done, select the project folder, the default being **INT-JEPS-V2-IL**
 7. From here you should be able to follow along with your instructor
