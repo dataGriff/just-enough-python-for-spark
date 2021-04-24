@@ -10,6 +10,6 @@
 # MAGIC %md # Project Information
 # MAGIC 
 # MAGIC * Name: **Just Enough Python for Spark**
-# MAGIC * Version:  **2.0.4**
-# MAGIC * Built On: **Apr 4, 2021 at 22:53:00 UTC**
+# MAGIC * Version:  **2.0.5**
+# MAGIC * Built On: **Apr 4, 2021 at 00:32:50 UTC**
 # MAGIC * Language: **Python**

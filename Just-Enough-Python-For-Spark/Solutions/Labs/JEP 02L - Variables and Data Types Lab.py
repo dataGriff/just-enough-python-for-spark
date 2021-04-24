@@ -25,7 +25,7 @@
 # COMMAND ----------
 
 # ANSWER
-conversion_rate = 1.18  # Create the variable conversion_rate and assign it the value of 1.18
+conversion_rate = 1.18 # Create the variable conversion_rate and assign it the value of 1.18
 
 # COMMAND ----------
 
