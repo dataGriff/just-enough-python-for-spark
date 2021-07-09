@@ -24,8 +24,23 @@
 
 # COMMAND ----------
 
+# MAGIC %md Before we get started, we need to copy our dataset from its current location in the cloud to our workspace.<br/>
+# MAGIC Typically this is not required except for on GCP where the fuse mount (**/dbfs/...**) cannot be directly accessed
+
+# COMMAND ----------
+
+src_path = "file:/dbfs/databricks-datasets/learning-spark-v2/sf-airbnb/sf-airbnb.csv"
+
+username = spark.sql("SELECT current_user()").first()[0]
+airbnb_path = f"file:/tmp/dbacademy/{username}/jepfs/sf-airbnb.csv"
+
+dbutils.fs.cp(src_path, airbnb_path)
+print(f"""Your data is now located at "airbnb_path", or more specifically, at\n{airbnb_path}""")
+
+# COMMAND ----------
+
 # MAGIC %md
-# MAGIC Read in the file located `/dbfs/databricks-datasets/learning-spark-v2/sf-airbnb/sf-airbnb.csv` into a pandas DataFrame, and display the first 5 records.
+# MAGIC Read in the file identified by the path **`airbnb_path`** into a pandas DataFrame, and display the first 5 records.
 
 # COMMAND ----------
 
@@ -94,7 +109,7 @@ df[df.isna().any(axis=1)]
 # COMMAND ----------
 
 # TODO
-financial_district_df = <FILL_IN>
+# financial_district_df = <FILL_IN>
 
 # COMMAND ----------
 
