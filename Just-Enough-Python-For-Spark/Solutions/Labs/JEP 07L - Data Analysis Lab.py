@@ -29,7 +29,7 @@
 
 # COMMAND ----------
 
-src_path = "file:/dbfs/databricks-datasets/learning-spark-v2/sf-airbnb/sf-airbnb.csv"
+src_path = "wasbs://courseware@dbacademy.blob.core.windows.net/just-enough-python-for-spark/v01/sf-airbnb.csv"
 
 username = spark.sql("SELECT current_user()").first()[0]
 airbnb_path = f"file:/tmp/dbacademy/{username}/jepfs/sf-airbnb.csv"
