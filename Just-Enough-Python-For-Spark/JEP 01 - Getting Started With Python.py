@@ -133,9 +133,7 @@
 
 # COMMAND ----------
 
-# MAGIC %python
-# MAGIC 
-# MAGIC print("Hello, world!")
+print("Hello, world!")
 
 # COMMAND ----------
 
