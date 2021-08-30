@@ -35,7 +35,7 @@ FILL_IN = FILL_IN # Create the variable conversion_rate and assign it the value 
 # COMMAND ----------
 
 # TODO
-Assert that your variable is of the correct type
+# Assert that your variable is of the correct type
 assert FILL_IN == FILL_IN, FILL_IN
 
 # COMMAND ----------
