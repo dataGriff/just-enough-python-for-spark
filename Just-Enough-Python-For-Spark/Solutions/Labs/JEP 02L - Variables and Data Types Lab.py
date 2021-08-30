@@ -36,7 +36,7 @@ conversion_rate = 1.18 # Create the variable conversion_rate and assign it the v
 
 # ANSWER
 # Assert that your variable is of the correct type
-assert type(conversion_rate) == float, f"Expected conversion_rate to be of type float, found {type(conversion_rate)}"
+assert type(conversion_rate) == float, f"Expected conversion_rate to be of type float, found {type(conversion_rate)}" 
 
 # COMMAND ----------
 
@@ -54,7 +54,7 @@ euro_amount = 567                                # Create the variable euro_amou
 usd_amount = conversion_rate * euro_amount       # Assign the result of the computation to usd_amount
 
 # Test your solution
-assert usd_amount == 669.06, "Incorrect amount."
+assert usd_amount == 669.06, "Incorrect amount." 
 
 # COMMAND ----------
 
@@ -73,7 +73,7 @@ print(f"{euro_amount} Euros is equal to ${usd_amount} USD")
 # COMMAND ----------
 
 # MAGIC %md-sandbox
-# MAGIC &copy; 2020 Databricks, Inc. All rights reserved.<br/>
+# MAGIC &copy; 2021 Databricks, Inc. All rights reserved.<br/>
 # MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="http://www.apache.org/">Apache Software Foundation</a>.<br/>
 # MAGIC <br/>
 # MAGIC <a href="https://databricks.com/privacy-policy">Privacy Policy</a> | <a href="https://databricks.com/terms-of-use">Terms of Use</a> | <a href="http://help.databricks.com/">Support</a>

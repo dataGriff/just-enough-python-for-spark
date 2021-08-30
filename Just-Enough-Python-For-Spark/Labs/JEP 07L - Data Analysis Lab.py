@@ -45,6 +45,7 @@ print(f"""Your data is now located at "airbnb_path", or more specifically, at\n{
 # COMMAND ----------
 
 # TODO
+FILL_IN
 
 # COMMAND ----------
 
@@ -58,6 +59,7 @@ print(f"""Your data is now located at "airbnb_path", or more specifically, at\n{
 # COMMAND ----------
 
 # TODO
+FILL_IN
 
 # COMMAND ----------
 
@@ -67,6 +69,7 @@ print(f"""Your data is now located at "airbnb_path", or more specifically, at\n{
 # COMMAND ----------
 
 # TODO
+FILL_IN
 
 # COMMAND ----------
 
@@ -83,11 +86,12 @@ df[df.isna().any(axis=1)]
 # MAGIC %md
 # MAGIC We're going to assume if a listing didn't input a number for `beds`, `bedrooms`, or `bathrooms` then the number should have been a 0.
 # MAGIC 
-# MAGIC Let's go ahead and fill the missing values for `beds`, `bedrooms`, or `bathrooms` with `0`.
+# MAGIC Let's go ahead and fill the missing values for `beds`, `bedrooms`, or `bathrooms` with `0`. 
 
 # COMMAND ----------
 
 # TODO
+FILL_IN
 
 # COMMAND ----------
 
@@ -98,18 +102,19 @@ df[df.isna().any(axis=1)]
 # COMMAND ----------
 
 # TODO
+FILL_IN
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ### Filter
 # MAGIC 
-# MAGIC Suppose we are only going to be near `Financial District` so we only want to view listings in that neighbourhood.
+# MAGIC Suppose we are only going to be near `Financial District` so we only want to view listings in that neighbourhood. 
 
 # COMMAND ----------
 
 # TODO
-# financial_district_df = <FILL_IN>
+financial_district_df = <FILL_IN>
 
 # COMMAND ----------
 
@@ -118,16 +123,17 @@ df[df.isna().any(axis=1)]
 # MAGIC 
 # MAGIC We want to see what the most common types of property listings around `Financial District` are! 
 # MAGIC 
-# MAGIC [Plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html) the count of the various `property_type`.
+# MAGIC [Plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html) the count of the various `property_type`. 
 
 # COMMAND ----------
 
 # TODO
+FILL_IN
 
 # COMMAND ----------
 
 # MAGIC %md-sandbox
-# MAGIC &copy; 2020 Databricks, Inc. All rights reserved.<br/>
+# MAGIC &copy; 2021 Databricks, Inc. All rights reserved.<br/>
 # MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="http://www.apache.org/">Apache Software Foundation</a>.<br/>
 # MAGIC <br/>
 # MAGIC <a href="https://databricks.com/privacy-policy">Privacy Policy</a> | <a href="https://databricks.com/terms-of-use">Terms of Use</a> | <a href="http://help.databricks.com/">Support</a>

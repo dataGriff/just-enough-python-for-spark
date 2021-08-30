@@ -35,7 +35,7 @@ FILL_IN = FILL_IN # Create the variable conversion_rate and assign it the value 
 # COMMAND ----------
 
 # TODO
-# Assert that your variable is of the correct type
+Assert that your variable is of the correct type
 assert FILL_IN == FILL_IN, FILL_IN
 
 # COMMAND ----------
@@ -54,7 +54,7 @@ FILL_IN = FILL_IN # Create the variable euro_amount and assign it the value of 5
 FILL_IN = FILL_IN # Assign the result of the computation to usd_amount
 
 # Test your solution
-assert usd_amount == 669.06, "Incorrect amount."
+assert usd_amount == 669.06, "Incorrect amount." 
 
 # COMMAND ----------
 
@@ -73,7 +73,7 @@ print(FILL_IN)
 # COMMAND ----------
 
 # MAGIC %md-sandbox
-# MAGIC &copy; 2020 Databricks, Inc. All rights reserved.<br/>
+# MAGIC &copy; 2021 Databricks, Inc. All rights reserved.<br/>
 # MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="http://www.apache.org/">Apache Software Foundation</a>.<br/>
 # MAGIC <br/>
 # MAGIC <a href="https://databricks.com/privacy-policy">Privacy Policy</a> | <a href="https://databricks.com/terms-of-use">Terms of Use</a> | <a href="http://help.databricks.com/">Support</a>
