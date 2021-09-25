@@ -40,7 +40,7 @@
 
 # MAGIC %md
 # MAGIC What is unique about this syntax is:
-# MAGIC * **`i`** is a varaible that is initially set to **`0`**
+# MAGIC * **`i`** is a variable that is initially set to **`0`**
 # MAGIC * **`i`** is incremented by one (**`i++`**) after each iteration of the loop
 # MAGIC * Incrementation and block-execution is repeated while the prescribed condition (**`i < 10`**) is true
 
@@ -92,7 +92,7 @@ print("This is executed once because it is outside the for loop")
 
 # MAGIC %md So how does one replicate a C-Style For Loop on a range of numbers in Python?
 # MAGIC 
-# MAGIC For that, we can use the <a href="https://docs.python.org/3/library/functions.html#func-range" target="_blank">range</a> function which produces an immutable collection of nubmers (a type of list).
+# MAGIC For that, we can use the <a href="https://docs.python.org/3/library/functions.html#func-range" target="_blank">range</a> function which produces an immutable collection of numbers (a type of list).
 
 # COMMAND ----------
 
@@ -120,7 +120,7 @@ for i in range(0, 5):
 # MAGIC 
 # MAGIC We don't always want to execute every line of code.
 # MAGIC 
-# MAGIC We can that process by employing **`if`**, **`elif`**, and **`else`** expressions.
+# MAGIC We can simplify that process by employing **`if`**, **`elif`**, and **`else`** expressions.
 # MAGIC 
 # MAGIC We can see a few examples here:
 
@@ -135,9 +135,9 @@ print("All done")
 
 # COMMAND ----------
 
-# MAGIC %md In the example above, line #5 is not executed.
+# MAGIC %md In the example above, line #4 is not executed.
 # MAGIC 
-# MAGIC Edit line #2 above and set the variable **`food`** to **`"eggs"`** and rerun the command.
+# MAGIC Edit line #1 above and set the variable **`food`** to **`"eggs"`** and rerun the command.
 
 # COMMAND ----------
 
@@ -178,7 +178,7 @@ print("All done")
 # MAGIC 
 # MAGIC For example, if I need syrup with waffles or pancakes?
 # MAGIC 
-# MAGIC Each **`if`** and **`elif`** expression can get increasignly more complex by adding more conditional statements and combining them with various **`and`** &amp; **`or`** operators
+# MAGIC Each **`if`** and **`elif`** expression can get increasingly more complex by adding more conditional statements and combining them with various **`and`** &amp; **`or`** operators
 
 # COMMAND ----------
 

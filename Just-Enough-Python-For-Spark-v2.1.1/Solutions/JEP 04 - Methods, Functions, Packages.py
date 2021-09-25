@@ -503,7 +503,7 @@ my_func(movie_title="The Big Lebowski", release_year=1998)
 # MAGIC 
 # MAGIC In Python, a Method refers to a special kind of function that is applied to an object.
 # MAGIC 
-# MAGIC We will talk more about objects and classes in a later lesson, but for now, consdier that:
+# MAGIC We will talk more about objects and classes in a later lesson, but for now, consider that:
 # MAGIC * A function only operates on the parameters passed to it (generally).
 # MAGIC * A method has parameters, but it also has additional state as defined by the object it is attached to.
 # MAGIC 
@@ -551,7 +551,7 @@ print(f"I found {total} instances of that substring")
 # MAGIC %md
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Libraries
 # MAGIC 
-# MAGIC Python includes a rich set of libraries developed by an every going community of software develoeprs.
+# MAGIC Python includes a rich set of libraries developed by an every going community of software developers.
 # MAGIC 
 # MAGIC Some libraries are included with Python by default.
 # MAGIC 

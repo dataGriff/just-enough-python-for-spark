@@ -11,7 +11,7 @@
 # MAGIC # Variables and Data Types
 # MAGIC 
 # MAGIC ## In this lesson you:
-# MAGIC * Explore fundamental Pythopn concepts
+# MAGIC * Explore fundamental Python concepts
 # MAGIC * Are introduced to 4 basic data types
 # MAGIC * Declare and assign variables
 # MAGIC * Employ simple, built-in functions such as **`print()`** and **`type()`**
@@ -27,7 +27,7 @@
 # MAGIC 
 # MAGIC They are often used to document various aspects of your code
 # MAGIC 
-# MAGIC They can also be used to temporary disable code (aka commenting out)
+# MAGIC They can also be used to temporarily disable code (aka commenting out)
 
 # COMMAND ----------
 
@@ -70,7 +70,7 @@ True # This is a boolean data type (1/0, true/false, on/off)
 # MAGIC 
 # MAGIC We can see that in the rendereding of **`Out[1]: True`**, **`Out[2]: 37`**, and **`Out[3]: 3.14159265359`** above.
 # MAGIC 
-# MAGIC We can leverage that feature to perform some basic mathimatical operations on various numbers.
+# MAGIC We can leverage that feature to perform some basic mathematical operations on various numbers.
 # MAGIC 
 # MAGIC Give it a quick try:
 # MAGIC * Addition (**`+`**)

@@ -48,7 +48,7 @@
 # MAGIC 
 # MAGIC Additional Resources:
 # MAGIC * [Python for Data Analysis by Wes McKinney](https://www.amazon.com/gp/product/1491957662/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=quantpytho-20&creative=9325&linkCode=as2&creativeASIN=1491957662&linkId=ea8de4253cce96046e8ab0383ac71b33)
-# MAGIC * [Python reference sheet](http://www.cogsci.rpi.edu/~destem/igd/python_cheat_sheet.pdf)
+# MAGIC * [Python reference sheet](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
 # MAGIC * [Python official tutorial](https://docs.python.org/3/tutorial/)
 
 # COMMAND ----------
@@ -96,7 +96,7 @@
 # MAGIC 
 # MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Python and IDEs
 # MAGIC 
-# MAGIC For developing Python in an integrated development environment (IDE), there are two main choices:
+# MAGIC For developing Python in an integrated development environment (IDE), there are three main choices:
 # MAGIC 
 # MAGIC * PyCharm: <a href="https://www.jetbrains.com/pycharm" target="_blank">https&#58;//www.jetbrains.com/pycharm</a>
 # MAGIC * Spyder: <a href="https://www.spyder-ide.org" target="_blank">https&#58;//www.spyder-ide.org</a>
