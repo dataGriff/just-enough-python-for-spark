@@ -11,7 +11,7 @@
 # MAGIC 
 # MAGIC * Name: **Just Enough Python for Spark**
 # MAGIC * Version:  **2.1.3**
-# MAGIC * Built On: **Sep 26, 2021 at 19:14:45 UTC**
+# MAGIC * Built On: **Sep 26, 2021 at 19:16:44 UTC**
 
 # COMMAND ----------
 
