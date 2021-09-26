@@ -32,7 +32,7 @@
 src_path = "wasbs://courseware@dbacademy.blob.core.windows.net/just-enough-python-for-spark/v01/sf-airbnb.csv"
 
 username = spark.sql("SELECT current_user()").first()[0]
-airbnb_path = f"file:/tmp/dbacademy/{username}/jepfs/sf-airbnb.csv"
+airbnb_path = f"file:/tmp/{username}/dbacademy/jepfs"
 
 dbutils.fs.cp(src_path, airbnb_path)
 print(f"""Your data is now located at "airbnb_path", or more specifically, at\n{airbnb_path}""")
