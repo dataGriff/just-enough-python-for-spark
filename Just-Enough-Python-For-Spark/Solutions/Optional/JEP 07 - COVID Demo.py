@@ -92,7 +92,6 @@ pd.read_csv("/dbfs/databricks-datasets/COVID/CSSEGISandData/csse_covid_19_data/c
 import pandas as pd
 
 df = pd.read_csv("/dbfs/databricks-datasets/COVID/CSSEGISandData/csse_covid_19_data/csse_covid_19_daily_reports/04-11-2020.csv")
-
 df
 
 # COMMAND ----------
@@ -394,16 +393,16 @@ all_files = glob.glob(path + "/*.csv")
 dfs = []
 
 for filename in all_files:
-  temp_df = pd.read_csv(filename)
-  temp_df.columns = [c.replace("/", "_") for c in temp_df.columns]
-  temp_df.columns = [c.replace(" ", "_") for c in temp_df.columns]
-  
-  month, day, year = filename.split("/")[-1].replace(".csv", "").split("-")
-  d = datetime.date(int(year), int(month), int(day))
-  temp_df["Date"] = d
+    temp_df = pd.read_csv(filename)
+    temp_df.columns = [c.replace("/", "_") for c in temp_df.columns]
+    temp_df.columns = [c.replace(" ", "_") for c in temp_df.columns]
 
-  dfs.append(temp_df)
-  
+    month, day, year = filename.split("/")[-1].replace(".csv", "").split("-")
+    d = datetime.date(int(year), int(month), int(day))
+    temp_df["Date"] = d
+
+    dfs.append(temp_df)
+    
 all_days_df = pd.concat(dfs, axis=0, ignore_index=True, sort=False)
 all_days_df = all_days_df.drop(["Latitude", "Longitude", "Lat", "Long_", "FIPS", "Combined_Key", "Last_Update"], axis=1)
 
@@ -437,9 +436,9 @@ all_days_df.groupby("Date")["Confirmed", "Deaths", "Recovered"].sum().plot(title
 # COMMAND ----------
 
 (all_days_df[(all_days_df["Country_Region"] == "US") & (all_days_df["Province_State"] == "California") & (all_days_df["Admin2"] == "San Francisco")]
-  .groupby("Date")["Confirmed", "Deaths", "Recovered"]
-  .sum()
-  .plot(title="Confirmed, Deaths, Recovered over Time", rot=45))
+ .groupby("Date")["Confirmed", "Deaths", "Recovered"]
+ .sum()
+ .plot(title="Confirmed, Deaths, Recovered over Time", rot=45))
 
 # COMMAND ----------
 
@@ -448,13 +447,13 @@ all_days_df.groupby("Date")["Confirmed", "Deaths", "Recovered"].sum().plot(title
 
 # COMMAND ----------
 
-def plotMyCountry(Country_Region, Province_State, Admin2):
-  (all_days_df[(all_days_df["Country_Region"] == Country_Region) & (all_days_df["Province_State"] == Province_State) & (all_days_df["Admin2"] == Admin2)]
-    .groupby("Date")["Confirmed", "Deaths", "Recovered"]
-    .sum()
-    .plot(title="Confirmed, Deaths, Recovered over Time", rot=45))
-  
-plotMyCountry("US", "New York", "New York City")
+def plot_my_country(Country_Region, Province_State, Admin2):
+    (all_days_df[(all_days_df["Country_Region"] == Country_Region) & (all_days_df["Province_State"] == Province_State) & (all_days_df["Admin2"] == Admin2)]
+     .groupby("Date")["Confirmed", "Deaths", "Recovered"]
+     .sum()
+     .plot(title="Confirmed, Deaths, Recovered over Time", rot=45))
+
+plot_my_country("US", "New York", "New York City")
 
 # COMMAND ----------
 

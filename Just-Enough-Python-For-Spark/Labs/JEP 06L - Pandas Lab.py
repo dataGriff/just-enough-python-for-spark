@@ -57,7 +57,7 @@ FILL_IN
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Add a new column called `row sum` to `df` which contains the sum of entries across each row in `df`.
+# MAGIC Add a new column to the dataframe called `sum` which contains the sum of entries across each row in `df`.
 
 # COMMAND ----------
 

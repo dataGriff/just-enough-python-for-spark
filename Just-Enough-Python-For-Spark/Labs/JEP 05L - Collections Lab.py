@@ -17,7 +17,7 @@
 # MAGIC   * The dictionary-key is the original value from the list
 # MAGIC   * The dictionary-value is the number of times the corresponding value appeared in the list.
 # MAGIC 
-# MAGIC For example, **`item_count(['a', 'b', 'a'])`** should return the dictionary **`{'a': 2, 'b': 1}`**
+# MAGIC For example, **`item_count(["a", "b", "a"])`** should return the dictionary **`{"a": 2, "b": 1}`**
 # MAGIC 
 # MAGIC Hint: For every value, you will need to first test the dictionary to see if you already have a count for that value or not.
 
@@ -25,12 +25,12 @@
 
 # TODO
 def FILL_IN(parameter)
-  output = {}          # Initialize an empty dictionary
+    output = {}          # Initialize an empty dictionary
   
-  for item in input:   # Iterate over the list of values
-    FILL_IN            # Update the dictionary
+    for item in input:   # Iterate over the list of values
+        FILL_IN            # Update the dictionary
       
-  return output        # Return the dictionary
+    return output        # Return the dictionary
 
 # COMMAND ----------
 

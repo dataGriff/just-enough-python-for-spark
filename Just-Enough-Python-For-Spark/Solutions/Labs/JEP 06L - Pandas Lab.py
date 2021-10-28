@@ -24,8 +24,8 @@
 # ANSWER
 import pandas as pd
 
-data = [[1,2,3], [4,5,6], [7,8,9]]
-df = pd.DataFrame(data=data, columns = ["one", "two", "three"])
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+df = pd.DataFrame(data=data, columns=["one", "two", "three"])
 df
 
 # COMMAND ----------
@@ -46,7 +46,7 @@ df[["three"]]
 # COMMAND ----------
 
 # ANSWER
-print(type(df["three"]))
+# print(type(df["three"]))
 df["three"]
 
 # COMMAND ----------
@@ -57,19 +57,17 @@ df["three"]
 # COMMAND ----------
 
 # ANSWER
-
 df["two"][1]
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Add a new column called `row sum` to `df` which contains the sum of entries across each row in `df`.
+# MAGIC Add a new column to the dataframe called `sum` which contains the sum of entries across each row in `df`.
 
 # COMMAND ----------
 
 # ANSWER
-
-df["row sum"] = df["one"] + df["two"] + df["three"]
+df["sum"] = df["one"] + df["two"] + df["three"]
 df
 
 # COMMAND ----------

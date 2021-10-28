@@ -17,15 +17,15 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC The current exchange rate as of 14 August 2020 is **1 EUR** to **1.18 USD**.
-# MAGIC 0. Create a variable called **`conversion_rate`** and intialize it to the value of **`1.18`**.
+# MAGIC The current exchange rate as of Oct 17, 2021 is **1 EUR** to **1.16 USD**.
+# MAGIC 0. Create a variable called **`conversion_rate`** and initialize it to the value of **`1.16`**.
 # MAGIC 
 # MAGIC This way, if the rate ever changes, we would only need to modify this single line of code and have everything else still work properly!
 
 # COMMAND ----------
 
 # ANSWER
-conversion_rate = 1.18 # Create the variable conversion_rate and assign it the value of 1.18
+conversion_rate = 1.16 # Create the variable conversion_rate and assign it the value of 1.16
 
 # COMMAND ----------
 
@@ -41,20 +41,20 @@ assert type(conversion_rate) == float, f"Expected conversion_rate to be of type 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Given that we have 567 EUR, compute what the corresponding amount should be in USD.
+# MAGIC Given that we have 566 EUR, compute what the corresponding amount should be in USD.
 # MAGIC 0. Create the variable **`euro_amount`** and assign it the value **`567`**.
 # MAGIC 0. Assign the result of the computation to the variable **`usd_amount`**.
 # MAGIC 
-# MAGIC Make sure you to use the variable **`conversion_rate`** in your computation and not the hard coded value **`1.18`**.
+# MAGIC Make sure you to use the variable **`conversion_rate`** in your computation and not the hard coded value **`1.16`**.
 
 # COMMAND ----------
 
 # ANSWER
-euro_amount = 567                                # Create the variable euro_amount and assign it the value of 567
+euro_amount = 566                                # Create the variable euro_amount and assign it the value of 566
 usd_amount = conversion_rate * euro_amount       # Assign the result of the computation to usd_amount
 
 # Test your solution
-assert usd_amount == 669.06, "Incorrect amount." 
+assert usd_amount == 656.56, "Incorrect amount." 
 
 # COMMAND ----------
 
@@ -63,7 +63,7 @@ assert usd_amount == 669.06, "Incorrect amount."
 # MAGIC 0. Create a new f-string using this template: **`{} Euros is equal to ${} USD`**
 # MAGIC 1. Print that new string to the console
 # MAGIC 
-# MAGIC Hint: This can be comleted in one or two lines of code
+# MAGIC Hint: This can be completed in one or two lines of code
 
 # COMMAND ----------
 

@@ -17,7 +17,7 @@
 # MAGIC   * The dictionary-key is the original value from the list
 # MAGIC   * The dictionary-value is the number of times the corresponding value appeared in the list.
 # MAGIC 
-# MAGIC For example, **`item_count(['a', 'b', 'a'])`** should return the dictionary **`{'a': 2, 'b': 1}`**
+# MAGIC For example, **`item_count(["a", "b", "a"])`** should return the dictionary **`{"a": 2, "b": 1}`**
 # MAGIC 
 # MAGIC Hint: For every value, you will need to first test the dictionary to see if you already have a count for that value or not.
 
@@ -25,17 +25,16 @@
 
 # ANSWER
 def item_count(input_list):
-  output_dict = {}  # Initialize an empty dictionary
-  
-  for item in input_list:
-    if item not in output_dict:
-      # Create an element for the item with an initial count of 1
-      output_dict[item] = 1
-    else:
-      # Add 1 to the current count for the item
-      output_dict[item] += 1
-      
-  return output_dict
+    output_dict = {}  # Initialize an empty dictionary
+
+    for item in input_list:
+        if item not in output_dict:
+            # Create an element for the item with an initial count of 1
+            output_dict[item] = 1
+        else:
+            # Add 1 to the current count for the item
+            output_dict[item] += 1
+    return output_dict
 
 # COMMAND ----------
 
