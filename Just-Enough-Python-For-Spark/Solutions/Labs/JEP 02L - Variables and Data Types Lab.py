@@ -42,7 +42,7 @@ assert type(conversion_rate) == float, f"Expected conversion_rate to be of type 
 
 # MAGIC %md
 # MAGIC Given that we have 566 EUR, compute what the corresponding amount should be in USD.
-# MAGIC 0. Create the variable **`euro_amount`** and assign it the value **`567`**.
+# MAGIC 0. Create the variable **`euro_amount`** and assign it the value **`566`**.
 # MAGIC 0. Assign the result of the computation to the variable **`usd_amount`**.
 # MAGIC 
 # MAGIC Make sure you to use the variable **`conversion_rate`** in your computation and not the hard coded value **`1.16`**.

@@ -61,7 +61,7 @@ def even_or_odd(num):
     """Optional doc string explaining the function"""
     if num % 2 == 0:
         print("even")
-    if num % 2 == 1:
+    elif num % 2 == 1:
         print("odd")
     else:
         print("UNKNOWN")
@@ -82,7 +82,7 @@ def even_or_odd(num):
     """Returns the string even, odd, or unknown"""
     if num % 2 == 0:
         return "even"
-    if num % 2 == 1:
+    elif num % 2 == 1:
         return "odd"
     else:
         return "UNKNOWN"
@@ -128,7 +128,7 @@ help(even_or_odd)
 def even_or_odd(num, error_string):
     if num % 2 == 0:
         return "even"
-    if num % 2 == 1:
+    elif num % 2 == 1:
         return "odd"
     else:
         return error_string
@@ -164,7 +164,7 @@ assert error_string == even_or_odd(1/3, error_string)
 def even_or_odd(num: int, error_string: str) -> str:
     if num % 2 == 0:
         return "even"
-    if num % 2 == 1:
+    elif num % 2 == 1:
         return "odd"
     else:
         return error_string
@@ -182,7 +182,7 @@ even_or_odd(42, error_string)
 def even_or_odd(num: int, error_string: str = "This isn't an even or odd number!") -> str:
     if num % 2 == 0:
         return "even"
-    if num % 2 == 1:
+    elif num % 2 == 1:
         return "odd"
     else:
         return error_string

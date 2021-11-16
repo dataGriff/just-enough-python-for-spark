@@ -156,6 +156,38 @@ for food in breakfast_list:
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ### 4) Ranges
+# MAGIC 
+# MAGIC A _range_ represents an _immutable_ sequence of numbers, and is commonly used for looping a specific number of times in `for` loops.
+
+# COMMAND ----------
+
+# Note that a range includes the start value and excludes the stop value
+print("A range from 1 up to but not including 5")
+for i in range(1, 5):
+    print(i)
+
+# A start value of 0 is used if you don't specify a value
+print("\nA range from 0 up to but not including 5")
+for i in range(5):
+    print(i)
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC A difference between lists and ranges is that a range is a _generator_, which generates the values when they are accessed rather than storing all of the values in memory. If necessary, you can use the `list()` built-in function to create a list by materializing all of the elements of a range.
+
+# COMMAND ----------
+
+values_range = range(5)
+print(f"The original range: {values_range}")
+
+values_list = list(values_range)
+print(f"The materialized range as a list: {values_list}")
+
+# COMMAND ----------
+
 # MAGIC %md-sandbox
 # MAGIC &copy; 2021 Databricks, Inc. All rights reserved.<br/>
 # MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="http://www.apache.org/">Apache Software Foundation</a>.<br/>

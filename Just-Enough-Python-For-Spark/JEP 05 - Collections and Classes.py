@@ -11,7 +11,6 @@
 # MAGIC # Collections & Classes
 # MAGIC ## ![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) In this lesson you:<br>
 # MAGIC - Use list methods and syntax to append, remove, or replace elements of a list
-# MAGIC - Compare ranges to lists
 # MAGIC - Define dictionaries
 # MAGIC - Use list and dictionary comprehensions to efficiently transform each element of each data structure
 # MAGIC - Define classes and methods
@@ -83,39 +82,7 @@ print(f"The highest value in the list is {max(nums)}")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### 2) Ranges
-# MAGIC 
-# MAGIC A _range_ represents an _immutable_ sequence of numbers, and is commonly used for looping a specific number of times in `for` loops.
-
-# COMMAND ----------
-
-# Note that a range includes the start value and excludes the stop value
-print("A range from 1 up to but not including 5")
-for i in range(1, 5):
-    print(i)
-
-# A start value of 0 is used if you don't specify a value
-print("\nA range from 0 up to but not including 5")
-for i in range(5):
-    print(i)
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC A difference between lists and ranges is that a range is a _generator_, which generates the values when they are accessed rather than storing all of the values in memory. If necessary, you can use the `list()` built-in function to create a list by materializing all of the elements of a range.
-
-# COMMAND ----------
-
-values_range = range(5)
-print(f"The original range: {values_range}")
-
-values_list = list(values_range)
-print(f"The materialized range as a list: {values_list}")
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC ### 3) List Comprehensions
+# MAGIC ### 2) List Comprehensions
 # MAGIC 
 # MAGIC A common task is to take a collection of values and create a new collection that is a transformation of the original values. You can do this explicitly with a `for` loop.
 
@@ -154,7 +121,7 @@ print(f"Square of positives list: {square_positives}")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### 4) Dictionaries
+# MAGIC ### 3) Dictionaries
 # MAGIC 
 # MAGIC A Python [_dictionary_](https://www.w3schools.com/python/python_dictionaries.asp) is a mutable collection of elements where each element is a key-value pair.
 # MAGIC 
@@ -278,7 +245,7 @@ for food, calories in breakfast_dict.items():
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### 5) Functions with Arbitrary Arguments
+# MAGIC ### 4) Functions with Arbitrary Arguments
 # MAGIC 
 # MAGIC You can define a function in Python that accepts an arbitrary number of arguments with syntax like this:
 # MAGIC 
@@ -291,20 +258,20 @@ for food, calories in breakfast_dict.items():
 
 # COMMAND ----------
 
-def sum(*args):
+def calculate_sum(*args):
     total = 0
     for value in args:
         total += value
     return total
 
-print(f"sum(1, 2, 3, 4, 5) = {sum(1, 2, 3, 4, 5)}")
-print(f"sum(1) = {sum(1)}")
-print(f"sum() = {sum()}")
+print(f"sum(1, 2, 3, 4, 5) = {calculate_sum(1, 2, 3, 4, 5)}")
+print(f"sum(1) = {calculate_sum(1)}")
+print(f"sum() = {calculate_sum()}")
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### 6) Functions with Arbitrary Keyword Arguments
+# MAGIC ### 5) Functions with Arbitrary Keyword Arguments
 # MAGIC 
 # MAGIC A Python function can also accept arbitrary named arguments, which are referred to a _keyword arguments_, with syntax like this:
 # MAGIC 
@@ -331,7 +298,7 @@ my_func(movie_title="Casino Royale", release_year=2006)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### 7) Classes
+# MAGIC ### 6) Classes
 # MAGIC 
 # MAGIC A [_class_](https://www.w3schools.com/python/python_classes.asp) is a custom type that you can define that is in essence a custom data structure.
 # MAGIC 
