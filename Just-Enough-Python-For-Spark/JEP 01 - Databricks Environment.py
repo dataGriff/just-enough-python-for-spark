@@ -130,7 +130,7 @@ comment
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ##![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Learning More
+# MAGIC #![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) Learning More
 # MAGIC 
 # MAGIC We like to encourage you to explore the documentation to learn more about the various features of the Databricks platform and notebooks.
 # MAGIC * <a href="https://docs.azuredatabricks.net/user-guide/index.html" target="_blank">User Guide</a>
@@ -143,7 +143,7 @@ comment
 # COMMAND ----------
 
 # MAGIC %md-sandbox
-# MAGIC &copy; 2021 Databricks, Inc. All rights reserved.<br/>
+# MAGIC &copy; 2022 Databricks, Inc. All rights reserved.<br/>
 # MAGIC Apache, Apache Spark, Spark and the Spark logo are trademarks of the <a href="https://www.apache.org/">Apache Software Foundation</a>.<br/>
 # MAGIC <br/>
 # MAGIC <a href="https://databricks.com/privacy-policy">Privacy Policy</a> | <a href="https://databricks.com/terms-of-use">Terms of Use</a> | <a href="https://help.databricks.com/">Support</a>
