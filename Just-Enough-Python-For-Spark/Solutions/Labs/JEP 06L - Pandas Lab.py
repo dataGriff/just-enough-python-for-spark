@@ -10,12 +10,14 @@
 # MAGIC %md
 # MAGIC # Pandas Lab
 # MAGIC 
-# MAGIC In this lab, you will use [pandas](https://pandas.pydata.org/docs/) for basic data manipulation.
+# MAGIC In this lab, you will use <a href="https://pandas.pydata.org/docs/" target="_blank">pandas</a> for basic data manipulation.
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Create a DataFrame called `df` with 3 columns and 3 rows with integers like in the following image. It should also have the appropriate column names.
+# MAGIC Create a DataFrame called **`df`** with 3 columns and 3 rows with integers like in the following image.
+# MAGIC 
+# MAGIC It should also have the appropriate column names.
 # MAGIC 
 # MAGIC ![DataFrame](https://files.training.databricks.com/images/create_dataframe.png)
 
@@ -31,7 +33,7 @@ df
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Display a DataFrame that only has the column `three`.
+# MAGIC Display a DataFrame that only has the column **`three`**.
 
 # COMMAND ----------
 
@@ -41,7 +43,7 @@ df[["three"]]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Return a Series (not DataFrame) object which just contains the values from the column `three`.
+# MAGIC Return a Series (not DataFrame) object which just contains the values from the column **`three`**.
 
 # COMMAND ----------
 
@@ -52,7 +54,9 @@ df["three"]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Programmatically extract the number `5` from `df`. Which column and row do you need to access?
+# MAGIC Programmatically extract the number **`5`** from **`df`**. 
+# MAGIC 
+# MAGIC Which column and row do you need to access?
 
 # COMMAND ----------
 
@@ -62,7 +66,7 @@ df["two"][1]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Add a new column to the dataframe called `sum` which contains the sum of entries across each row in `df`.
+# MAGIC Add a new column to the dataframe called **`sum`** which contains the sum of entries across each row in **`df`**.
 
 # COMMAND ----------
 

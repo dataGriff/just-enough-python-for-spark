@@ -9,33 +9,35 @@
 
 # MAGIC %md
 # MAGIC # COVID Demo
-# MAGIC ## Data Analysis with `pandas`
+# MAGIC ## Data Analysis with **`pandas`**
 # MAGIC 
 # MAGIC ## ![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) In this lesson you:<br>
 # MAGIC  - Import the COVID-19 dataset
-# MAGIC    * `pd.read_csv()`
+# MAGIC    * **`pd.read_csv()`**
 # MAGIC  - Summarize the data
-# MAGIC    * `head`, `tail`, `shape`
-# MAGIC    * `sum`, `min`, `count`, `mean`, `std`
-# MAGIC    * `describe`
+# MAGIC    * **`head`**, **`tail`**, **`shape`**
+# MAGIC    * **`sum`**, **`min`**, **`count`**, **`mean`**, **`std`**
+# MAGIC    * **`describe`**
 # MAGIC  - Slice and munge data
-# MAGIC    * Slicing, `loc`, `iloc`
-# MAGIC    * `value_counts`
-# MAGIC    * `drop`
-# MAGIC    * `sort_values`
+# MAGIC    * Slicing, **`loc`**, **`iloc`**
+# MAGIC    * **`value_counts`**
+# MAGIC    * **`drop`**
+# MAGIC    * **`sort_values`**
 # MAGIC    * Filtering
 # MAGIC  - Group data and perform aggregate functions
-# MAGIC    * `groupby`
+# MAGIC    * **`groupby`**
 # MAGIC  - Work with missing data and duplicates
-# MAGIC    * `isnull`
-# MAGIC    * `unique`, `drop_duplicates`
-# MAGIC    * `fillna`
+# MAGIC    * **`isnull`**
+# MAGIC    * **`unique`**, **`drop_duplicates`**
+# MAGIC    * **`fillna`**
 # MAGIC  - Visualization
 # MAGIC    * Histograms
 # MAGIC    * Scatterplots
 # MAGIC    * Lineplots
 # MAGIC  
-# MAGIC  Check out [this cheetsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf) for help.  Also see [the `pandas` docs.](https://pandas.pydata.org/docs/)
+# MAGIC  Check out <a href="https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf" target="_blank">this cheetsheet</a> for help.
+# MAGIC  
+# MAGIC  See also the <a href="https://pandas.pydata.org/docs/" target="_blank">pandas docs</a>.
 
 # COMMAND ----------
 
@@ -67,7 +69,9 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Import `pandas`.  Alias it as `pd`
+# MAGIC Import **`pandas`**.  
+# MAGIC 
+# MAGIC Alias it as **`pd`**:
 
 # COMMAND ----------
 
@@ -76,7 +80,9 @@ import pandas as pd
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Read the csv file.  This creates a `DataFrame`
+# MAGIC Read the csv file. 
+# MAGIC 
+# MAGIC This creates a **`DataFrame`**.
 
 # COMMAND ----------
 
@@ -85,7 +91,7 @@ pd.read_csv("/dbfs/databricks-datasets/COVID/CSSEGISandData/csse_covid_19_data/c
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Now let's combine the lines of code and save the `DataFrame` to a variable so we can reuse it
+# MAGIC Now let's combine the lines of code and save the **`DataFrame`** to a variable so we can reuse it
 
 # COMMAND ----------
 
@@ -192,7 +198,7 @@ df[["Country_Region", "Confirmed"]]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Create a new column `Date`
+# MAGIC Create a new column called **`Date`**
 
 # COMMAND ----------
 

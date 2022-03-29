@@ -10,15 +10,16 @@
 # MAGIC %md
 # MAGIC # Pandas
 # MAGIC 
-# MAGIC [Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/index.html) is a popular Python library among data scientists with high performing, easy-to-use data structures and data analysis tools.
+# MAGIC <a href="https://pandas.pydata.org/pandas-docs/stable/reference/index.html" target="_blank">Pandas</a> is a popular Python library among data scientists with high performing, easy-to-use data structures and data analysis tools.
 # MAGIC 
 # MAGIC ## ![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png) In this lesson you:<br><br>
 # MAGIC * Explain what pandas is and why it's so popular
 # MAGIC * Create and manipulate pandas DataFrames and Series
 # MAGIC * Perform operations on pandas objects
 # MAGIC 
-# MAGIC First, let us import pandas with the alias `pd` so we can refer to the library without having to type Pandas out each time. Pandas is pre-installed on Databricks.
-# MAGIC    
+# MAGIC First, let us import pandas with the alias **`pd`** so we can refer to the library without having to type Pandas out each time. 
+# MAGIC 
+# MAGIC Pandas is pre-installed on Databricks.   
 
 # COMMAND ----------
 
@@ -29,9 +30,9 @@ pd.__version__
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### Motivate why to use `pandas`
+# MAGIC ### Motivate why to use **`pandas`**
 # MAGIC 
-# MAGIC Let's start big picture...<br><br>
+# MAGIC Let's start big picture...
 # MAGIC 
 # MAGIC * Humans are tool using animals 
 # MAGIC * Computers are one of the most powerful tools we've created
@@ -40,7 +41,7 @@ pd.__version__
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Ok, cool. But why `pandas`?<br><br>
+# MAGIC Ok, cool. But why **`pandas`**?
 # MAGIC 
 # MAGIC * More and more, data is leading decision making
 # MAGIC * Excel is great but what if...
@@ -50,14 +51,14 @@ pd.__version__
 # MAGIC   - You want to do machine learning
 # MAGIC * One of the core libraries used by data analysts and data scientists in Python
 # MAGIC 
-# MAGIC Enter `pandas`...
+# MAGIC Enter **`pandas`**...
 
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ### Introduce `pandas` and its history
+# MAGIC ### Introduce **`pandas`** and its history
 # MAGIC 
-# MAGIC `pandas` is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+# MAGIC **`pandas`** is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
 # MAGIC 
 # MAGIC Highlights:
 # MAGIC 
@@ -76,14 +77,16 @@ pd.__version__
 # MAGIC - Python with pandas is in use in a wide variety of **academic and commercial domains**, including Finance, Neuroscience, Economics, Statistics, Advertising, Web Analytics, and more.
 # MAGIC 
 # MAGIC 
-# MAGIC [Check out the book](https://www.amazon.com/gp/product/1491957662/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=quantpytho-20&creative=9325&linkCode=as2&creativeASIN=1491957662&linkId=ea8de4253cce96046e8ab0383ac71b33)
+# MAGIC <a href="https://www.amazon.com/gp/product/1491957662/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=quantpytho-20&creative=9325&linkCode=as2&creativeASIN=1491957662&linkId=ea8de4253cce96046e8ab0383ac71b33" target="_blank">Check out the book</a>
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Pandas DataFrames
 # MAGIC 
-# MAGIC Let's see how we can create a simple [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) in Pandas. We are going to create a list with 5 strings that we wish to store inside the DataFrame.
+# MAGIC Let's see how we can create a simple <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html" target="_blank">DataFrame</a> in Pandas.
+# MAGIC 
+# MAGIC We are going to create a list with 5 strings that we wish to store inside the DataFrame.
 
 # COMMAND ----------
 
@@ -95,7 +98,9 @@ pd.DataFrame(data=data)
 
 # MAGIC %md
 # MAGIC 
-# MAGIC The `0` in the very first row is the name of the column with defaults to integers if not specified. What if we want to add in another column and name the columns?
+# MAGIC The **`0`** in the very first row is the name of the column with defaults to integers if not specified. 
+# MAGIC 
+# MAGIC What if we want to add in another column and name the columns?
 
 # COMMAND ----------
 
@@ -117,7 +122,9 @@ df.dtypes
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC What if our DataFrame has many rows and we don't want to print out our entire DataFrame? We can use the `.head()` and `.tail()` functions to limit the number of rows we see.
+# MAGIC What if our DataFrame has many rows and we don't want to print out our entire DataFrame?
+# MAGIC 
+# MAGIC We can use the **`.head()`** and **`.tail()`** functions to limit the number of rows we see.
 
 # COMMAND ----------
 
@@ -132,7 +139,11 @@ df.tail(2)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC If we had many columns and we didn't want to see all of them? We can select specific columns to include by using brackets and "indexing" our DataFrame. This would return us another DataFrame which we can display.
+# MAGIC If we had many columns and we didn't want to see all of them? 
+# MAGIC 
+# MAGIC We can select specific columns to include by using brackets and "indexing" our DataFrame. 
+# MAGIC 
+# MAGIC This would return us another DataFrame which we can display.
 
 # COMMAND ----------
 
@@ -160,7 +171,9 @@ df["Integers"]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC The 2 cells above returned Pandas [Series](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html) objects instead of Pandas DataFrame objects. A Pandas Series is a single column of a Pandas DataFrame.
+# MAGIC The 2 cells above returned Pandas <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html" target="_blank">Series</a> objects instead of Pandas DataFrame objects.
+# MAGIC 
+# MAGIC A Pandas Series is a single column of a Pandas DataFrame.
 
 # COMMAND ----------
 
@@ -169,7 +182,9 @@ type(df), type(df["Integers"])
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC We can index into a Series to get an entry in a specific row. The index count starts at 0 by default.
+# MAGIC We can index into a Series to get an entry in a specific row.
+# MAGIC 
+# MAGIC The index count starts at 0 by default.
 
 # COMMAND ----------
 
@@ -193,7 +208,7 @@ df["Integers"] * df["Integers"]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC We can create a new column in our DataFrame `df`.
+# MAGIC We can create a new column in our DataFrame **`df`**.
 
 # COMMAND ----------
 

@@ -15,7 +15,7 @@
 # MAGIC   * with and without arguments
 # MAGIC   * with and without type hints
 # MAGIC * Use assert() statements to "unit test" functions
-# MAGIC * Call the `help()` function to learn about modules, functions, classes, and keywords
+# MAGIC * Call the **`help()`** function to learn about modules, functions, classes, and keywords
 # MAGIC * Identify differences between functions and methods
 # MAGIC * Import libraries
 # MAGIC    
@@ -48,7 +48,7 @@
 # MAGIC %md
 # MAGIC If we want to determine whether a whole bunch of numbers are even or odd, we can package this same code into a **function**. 
 # MAGIC 
-# MAGIC A [function](https://www.w3schools.com/python/python_functions.asp) is created with the `def` keyword, followed by the name of the function, any parameters in parentheses, and a colon.
+# MAGIC A <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">function</a> is created with the **`def`** keyword, followed by the name of the function, any parameters in parentheses, and a colon.
 
 # COMMAND ----------
 
@@ -74,7 +74,7 @@ even_or_odd(42)
 # MAGIC %md
 # MAGIC The one problem with printing the result is that if you assign it back to a variable, the variable is a None datatype (the output of print, versus the output of the function).
 # MAGIC 
-# MAGIC Instead, use the `return` keyword.
+# MAGIC Instead, use the **`return`** keyword.
 
 # COMMAND ----------
 
@@ -93,7 +93,8 @@ even_or_odd(42)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC A best practice is to create a "unit" test to verify our function.<br>
+# MAGIC A best practice is to create a "unit" test to verify our function.
+# MAGIC 
 # MAGIC An "AssertionError:" will only display if the function returns something that is not expected.
 
 # COMMAND ----------
@@ -111,7 +112,7 @@ assert "UNKNOWN" == even_or_odd(1/3)
 # MAGIC %md
 # MAGIC ###Help Function
 # MAGIC 
-# MAGIC The python `help()` function can display the additional information on modules, functions, classes, and keywords.
+# MAGIC The python **`help()`** function can display the additional information on modules, functions, classes, and keywords.
 
 # COMMAND ----------
 
@@ -215,8 +216,9 @@ print(name.upper())
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Certain methods expect an argument.<br>
-# MAGIC Below we pass in `a` as an argument to the count() method and it returns the count of number of times `a` is found in the string 
+# MAGIC Certain methods expect an argument.
+# MAGIC 
+# MAGIC Below we pass in **`a`** as an argument to the **`count()`** method and it returns the count of number of times **`a`** is found in the string 
 
 # COMMAND ----------
 
@@ -227,7 +229,11 @@ print(name.count("a"))
 # MAGIC %md
 # MAGIC ### Libraries
 # MAGIC 
-# MAGIC You can also use additional libraries when working with Python, such as [numpy](https://numpy.org/doc/stable/). Numpy is pre-installed on the Databricks runtime. You will need to first `import` numpy.
+# MAGIC You can also use additional libraries when working with Python, such as <a href="https://numpy.org/doc/stable/". 
+# MAGIC 
+# MAGIC Numpy is pre-installed on the Databricks runtime.
+# MAGIC                                                                            
+# MAGIC You will need to first **`import`** numpy.
 
 # COMMAND ----------
 
@@ -253,7 +259,9 @@ np.sqrt(12)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Or if you want to import every function from numpy, you can use the wildcard `*`. However, while this is simpler, it is generally not preferred.
+# MAGIC Or if you want to import every function from numpy, you can use the wildcard **`*`**.
+# MAGIC 
+# MAGIC However, while this is simpler, it is generally not preferred.
 
 # COMMAND ----------
 

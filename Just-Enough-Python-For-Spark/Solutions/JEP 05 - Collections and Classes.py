@@ -53,7 +53,7 @@ print(f"After the delete: {breakfast_list}")
 # MAGIC %md
 # MAGIC #### Determining Whether an Item is in a List
 # MAGIC 
-# MAGIC You can test for the presence or absence of an item in a list using the `in` and `not in` operations, respectively.
+# MAGIC You can test for the presence or absence of an item in a list using the **`in`** and **`not in`** operations, respectively.
 
 # COMMAND ----------
 
@@ -84,7 +84,9 @@ print(f"The highest value in the list is {max(nums)}")
 # MAGIC %md
 # MAGIC ### 2) List Comprehensions
 # MAGIC 
-# MAGIC A common task is to take a collection of values and create a new collection that is a transformation of the original values. You can do this explicitly with a `for` loop.
+# MAGIC A common task is to take a collection of values and create a new collection that is a transformation of the original values. 
+# MAGIC 
+# MAGIC You can do this explicitly with a **`for`** loop.
 
 # COMMAND ----------
 
@@ -98,7 +100,9 @@ print(f"Transformed results: {caps_list}")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC A more compact and efficient technique to accomplish the same thing is a _list comprehension_. The following is equivalent to the example above:
+# MAGIC A more compact and efficient technique to accomplish the same thing is a _list comprehension_. 
+# MAGIC 
+# MAGIC The following is equivalent to the example above:
 
 # COMMAND ----------
 
@@ -123,7 +127,7 @@ print(f"Square of positives list: {square_positives}")
 # MAGIC %md
 # MAGIC ### 3) Dictionaries
 # MAGIC 
-# MAGIC A Python [_dictionary_](https://www.w3schools.com/python/python_dictionaries.asp) is a mutable collection of elements where each element is a key-value pair.
+# MAGIC A Python <a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">_dictionary_</a> is a mutable collection of elements where each element is a key-value pair.
 # MAGIC 
 # MAGIC * All of the keys in a dictionary must be unique.
 # MAGIC * The keys must be of an immutable type, typically strings or integers.
@@ -158,7 +162,7 @@ print(f"Your apple had {apple_calories} calories.")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC However, if the dictionary does not contain an element with that key, Python raises a `KeyError`.
+# MAGIC However, if the dictionary does not contain an element with that key, Python raises a **`KeyError`**.
 
 # COMMAND ----------
 
@@ -168,7 +172,9 @@ print(f"Your apple had {apple_calories} calories.")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Alternatively, you can use the dictionary `get()` method. This returns the value for the given key if present. If the key is not present in the dictionary, `get()` returns either a given default value if specified or the `None` value otherwise.
+# MAGIC Alternatively, you can use the dictionary **`get()`** method. This returns the value for the given key if present. 
+# MAGIC 
+# MAGIC If the key is not present in the dictionary, **`get()`** returns either a given default value if specified or the **`None`** value otherwise.
 
 # COMMAND ----------
 
@@ -185,7 +191,7 @@ print(f"{result2}")
 # MAGIC %md
 # MAGIC #### Determining Whether a Key is in a Dictionary
 # MAGIC 
-# MAGIC You can test for the presence or absence of a key in a dictionary using the `in` and `not in` operations, respectively.
+# MAGIC You can test for the presence or absence of a key in a dictionary using the **`in`** and **`not in`** operations, respectively.
 
 # COMMAND ----------
 
@@ -223,7 +229,7 @@ print(f"After delete: {breakfast_dict}")
 # MAGIC %md
 # MAGIC #### Iterating Over the Elements of a Dictionary
 # MAGIC 
-# MAGIC You can use a simple `for` loop to iterate over the elements of a dictionary like this:
+# MAGIC You can use a simple **`for`** loop to iterate over the elements of a dictionary like this:
 
 # COMMAND ----------
 
@@ -249,12 +255,14 @@ for food, calories in breakfast_dict.items():
 # MAGIC 
 # MAGIC You can define a function in Python that accepts an arbitrary number of arguments with syntax like this:
 # MAGIC 
-# MAGIC ```
-# MAGIC def my_func(*args):
-# MAGIC   ...
-# MAGIC ```
+# MAGIC <code><b>
+# MAGIC def my_func(*args):<br/>
+# MAGIC &nbsp; &nbsp; ...
+# MAGIC </b></code>
 # MAGIC 
-# MAGIC The parameter name `args` is not required, but it is a common convention. The `args` parameter is treated as a sequence containing all of the arguments passed to the function.
+# MAGIC The parameter name **`args`** is not required, but it is a common convention. 
+# MAGIC 
+# MAGIC The **`args`** parameter is treated as a sequence containing all of the arguments passed to the function.
 
 # COMMAND ----------
 
@@ -275,12 +283,14 @@ print(f"sum() = {calculate_sum()}")
 # MAGIC 
 # MAGIC A Python function can also accept arbitrary named arguments, which are referred to a _keyword arguments_, with syntax like this:
 # MAGIC 
-# MAGIC ```
-# MAGIC def my_func(**kwargs):
-# MAGIC   ...
-# MAGIC ```
+# MAGIC <code><b>
+# MAGIC def my_func(**kwargs):<br/>
+# MAGIC &nbsp; &nbsp; ...
+# MAGIC </b></code>
 # MAGIC 
-# MAGIC The parameter name `kwargs` is not required, but it is a common convention. The `kwargs` parameter is treated as a dictionary containing all of the argument names and values passed to the function.
+# MAGIC The parameter name **`kwargs`** is not required, but it is a common convention. 
+# MAGIC 
+# MAGIC The **`kwargs`** parameter is treated as a dictionary containing all of the argument names and values passed to the function.
 
 # COMMAND ----------
 
@@ -300,7 +310,7 @@ my_func(movie_title="Casino Royale", release_year=2006)
 # MAGIC %md
 # MAGIC ### 6) Classes
 # MAGIC 
-# MAGIC A [_class_](https://www.w3schools.com/python/python_classes.asp) is a custom type that you can define that is in essence a custom data structure.
+# MAGIC A <a href="https://www.w3schools.com/python/python_classes.asp" target="_blank">_class_</a> is a custom type that you can define that is in essence a custom data structure.
 # MAGIC 
 # MAGIC * The class definition itself serves as a "template" that you can use to create any number of individual _objects_ (also known as _instances_ in object oriented programming).
 # MAGIC * These objects will have the same characteristics and behaviors, but their own data values (also known as _attributes_ or _properties_ in OOP).
@@ -311,7 +321,7 @@ my_func(movie_title="Casino Royale", release_year=2006)
 # MAGIC * From one blueprint (class), a developer could build any number of houses (objects/instances).
 # MAGIC * Each house would have the same floorplan, but each house could have its own unique paint colors, floor tiling, etc. (attributes/properties).
 # MAGIC 
-# MAGIC NOTE: We've already encountered and used classes in this course. For example, Python has a built-in `str` class that defines the capabilities of all strings. Similarly, `list` and `dict` are built-in classes defining the capabilities of lists and dictionaries, respectively. You can see that for yourself by using the `help()` function on these types:
+# MAGIC NOTE: We've already encountered and used classes in this course. For example, Python has a built-in **`str`** class that defines the capabilities of all strings. Similarly, **`list`** and **`dict`** are built-in classes defining the capabilities of lists and dictionaries, respectively. You can see that for yourself by using the **`help()`** function on these types:
 
 # COMMAND ----------
 
@@ -326,7 +336,7 @@ help(dict)
 # MAGIC 
 # MAGIC * These methods are automatically associated with each object created using the class.
 # MAGIC * When you invoke a method, Python automatically passes a reference to the associated object as the first argument, followed by any other arguments that you passed explicitly.
-# MAGIC * By convention, `self` is used as the parameter name for the object reference.
+# MAGIC * By convention, **`self`** is used as the parameter name for the object reference.
 # MAGIC 
 # MAGIC Here's a simple example of a class definition and its use:
 
@@ -345,7 +355,13 @@ thing2.greet("Guten Tag!")    # Call the greet() method on thing2
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Wow, that's ugly. We can see that the value of `self` is different for `thing1` and `thing2` because each is a separate instance of `Thing`. But the string representation of `self` is not informative to us as programmers. To make things more interesting and useful, we need to define some class properties.
+# MAGIC Wow, that's ugly. 
+# MAGIC 
+# MAGIC We can see that the value of **`self`** is different for **`thing1`** and **`thing2`** because each is a separate instance of **`Thing`**. 
+# MAGIC 
+# MAGIC But the string representation of **`self`** is not informative to us as programmers. 
+# MAGIC 
+# MAGIC To make things more interesting and useful, we need to define some class properties.
 
 # COMMAND ----------
 
@@ -354,7 +370,7 @@ thing2.greet("Guten Tag!")    # Call the greet() method on thing2
 # MAGIC 
 # MAGIC Class properties are usually defined in a special method called a _constructor_.
 # MAGIC 
-# MAGIC * The constructor method **must** be named `__init__()`.
+# MAGIC * The constructor method **must** be named **`__init__()`**.
 # MAGIC * Python calls the constructor method automatically whenever you create an instance of the class.
 # MAGIC * The purpose of the constructor is to initialize the newly created instance, most typically by setting the initial values of the object's properties.
 # MAGIC 

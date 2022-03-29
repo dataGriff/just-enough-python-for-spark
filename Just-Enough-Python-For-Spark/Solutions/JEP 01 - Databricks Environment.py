@@ -17,7 +17,10 @@
 # MAGIC   * Export notebooks
 # MAGIC   
 # MAGIC References:
-# MAGIC * Databricks documentation on [AWS](https://docs.databricks.com/), [Azure](https://docs.microsoft.com/en-us/azure/databricks/) & [GCP](https://docs.gcp.databricks.com/)
+# MAGIC * Databricks documentation on
+# MAGIC <a href="https://docs.databricks.com" target="_blank">AWS</a>,
+# MAGIC <a href="https://docs.microsoft.com/en-us/azure/databricks" target="_blank">Azure</a> &
+# MAGIC <a href="https://docs.gcp.databricks.com" target="_blank">GCP</a>
 
 # COMMAND ----------
 
@@ -66,7 +69,7 @@ comment
 # MAGIC 
 # MAGIC Our favorite Magic Command **&percnt;md** allows us to render Markdown in a cell:
 # MAGIC * Double click this cell to begin editing it
-# MAGIC * Then hit `Esc` to stop editing
+# MAGIC * Then hit **`Esc`** to stop editing
 # MAGIC 
 # MAGIC # Title One
 # MAGIC ## Title Two

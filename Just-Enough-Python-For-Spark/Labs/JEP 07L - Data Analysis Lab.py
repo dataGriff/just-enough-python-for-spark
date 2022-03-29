@@ -41,9 +41,9 @@ FILL_IN
 # MAGIC %md
 # MAGIC We are not interested in all of the columns in this DataFrame so let's select just these columns: 
 # MAGIC 
-# MAGIC `"beds", "bedrooms", "bathrooms", "property_type", "neighbourhood_cleansed"` and assign the result to the variable `df`.
+# MAGIC **`"beds", "bedrooms", "bathrooms", "property_type", "neighbourhood_cleansed"`** and assign the result to the variable **`df`**.
 # MAGIC 
-# MAGIC NOTE: We are not looking at the `price` column for now because we need to convert it from a string to a double (and remove the `$` and `,` from the values)
+# MAGIC NOTE: We are not looking at the **`price`** column for now because we need to convert it from a string to a double (and remove the **`$`** and **`,`** from the values)
 
 # COMMAND ----------
 
@@ -53,7 +53,9 @@ FILL_IN
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Now that we have the columns that we want, we would like to view the listings with the highest number of bedrooms first. We can do this using the [.sort_values()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html) function!
+# MAGIC Now that we have the columns that we want, we would like to view the listings with the highest number of bedrooms first.
+# MAGIC 
+# MAGIC We can do this using the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html" target="_blank">.sort_values()</a> function!
 
 # COMMAND ----------
 
@@ -64,7 +66,9 @@ FILL_IN
 
 # MAGIC %md
 # MAGIC ### Fill Missing Values
-# MAGIC If you scroll through the rows carefully you'll notice that some of the entries say `NaN` instead of a number. Run the following cell to pick out and display those listings using [isna()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.isna.html).
+# MAGIC If you scroll through the rows carefully you'll notice that some of the entries say **`NaN`** instead of a number.
+# MAGIC 
+# MAGIC Run the following cell to pick out and display those listings using <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.isna.html" target="_blank">isna()</a>.
 
 # COMMAND ----------
 
@@ -73,9 +77,9 @@ df[df.isna().any(axis=1)]
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC We're going to assume if a listing didn't input a number for `beds`, `bedrooms`, or `bathrooms` then the number should have been a 0.
+# MAGIC We're going to assume if a listing didn't input a number for **`beds`**, **`bedrooms`**, or **`bathrooms`** then the number should have been a **`0`**.
 # MAGIC 
-# MAGIC Let's go ahead and fill the missing values for `beds`, `bedrooms`, or `bathrooms` with `0`. 
+# MAGIC Let's go ahead and fill the missing values for **`beds`**, **`bedrooms`**, or **`bathrooms`** with **`0`**. 
 
 # COMMAND ----------
 
@@ -110,9 +114,9 @@ financial_district_df = <FILL_IN>
 # MAGIC %md
 # MAGIC ### Plot
 # MAGIC 
-# MAGIC We want to see what the most common types of property listings around `Financial District` are! 
+# MAGIC We want to see what the most common types of property listings around **`Financial District`** are! 
 # MAGIC 
-# MAGIC [Plot](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html) the count of the various `property_type`. 
+# MAGIC <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html" target="_blank">Plot</a> the count of the various **`property_type`**. 
 
 # COMMAND ----------
 
