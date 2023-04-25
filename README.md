@@ -5,3 +5,7 @@ There are two ways to get started (with and w/o Databricks Repos). Your instruct
 
 For your convenience, both procedures are documented for you at  
 <a href="https://www.databricks.training/step-by-step/importing-courseware-from-github" target="_blank">https&#58;//www.databricks.training/step-by-step/importing-courseware-from-github</a>.<br/>
+
+## Griff Notes
+
+* Install [Databricks Extension](https://marketplace.visualstudio.com/items?itemName=databricks.databricks)
